@@ -3,6 +3,7 @@
 // }
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   // flex-wrap: wrap;
   // justify-content: center;
   // align-items: center;
@@ -18,11 +19,12 @@
   }
 }
 .client {
-  width: 210px;
+  // width: 210px;
   height: 90px;
 
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
 
     &:nth-child(n + 5) {
       margin-bottom: 0;
@@ -34,18 +36,21 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    width: calc((100%-90px) / 3);
+    width: calc((100% - 3 * 30px) / 3);
     margin-right: 30px;
+    margin-bottom: 30px;
 
     &:nth-child(3n + 3) {
       margin-right: 0;
     }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
-    flex-basis: 33.33333%;
     margin-right: 30px;
+    width: 170px;
 
     &:last-child {
       margin-right: 0;

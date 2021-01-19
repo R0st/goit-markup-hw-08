@@ -1,14 +1,21 @@
 /* footer social */
-.footer-social .social-list {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-social .logo-icon {
-    fill: $white-color;
-  }
-  
-  .footer-social .social-link:hover,
-  .footer-social .social-link:focus {
-    background-color: $accent-color;
-  }
+.footer-social {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.resourse {
+  display: inline-flex;
+}
+// .footer-social .social-list {
+//     padding: 0;
+//     margin: 0;
+//   }
+
+.footer-social .logo-icon {
+  fill: $white-color;
+}
+
+.footer-social .social-link:hover,
+.footer-social .social-link:focus {
+  background-color: $accent-color;
+}
