@@ -1,0 +1,125 @@
+/* наши работы */
+// .our-jobs {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+.jobs-img .title,
+.team > h2 {
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
+
+  & img {
+    margin-right: 30px;
+    display: block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.card {
+  // position: relative;
+
+  &-text {
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+      height: 50px;
+    }
+    // display: flex;
+    // width: 370px;
+    // height: 70px;
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $bcg-jobs-img;
+
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+  }
+}
+.pictures img:last-child {
+  margin-right: 0;
+}
+
+.title.works {
+  margin-bottom: 10px;
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  // align-items: center;
+
+  & .title {
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  & p {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background: $bcg-our-team;
+    border-radius: 4px;
+  }
+
+  & > .item {
+    margin-right: 30px;
+  }
+}
+
+.features-list {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.antenna-icon,
+.clock-icon,
+.diagram-icon,
+.astronaut-icon {
+  width: 70px;
+  height: 70px;
+}

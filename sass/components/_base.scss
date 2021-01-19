@@ -1,0 +1,72 @@
+body {
+  font-family: $main-font, sans-serif;
+  font-weight: 400;
+  color: $primary-text-color;
+  background-color: $white-color;
+  text-decoration: none;
+  font-size: 14px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* list  */
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: list-item;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* title */
+.title {
+  color: $title-text-color;
+}
+
+/* ссылки */
+a {
+  text-decoration: none;
+  color: $title-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+/* скрытый заголовок */
+.h2-invis {
+  display: none;
+}
+
+/* чем мы занимаемся */
+.container.jobs-img {
+  padding-bottom: 94px;
+}
+
+.title.h2 {
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: $title-text-color;
+}
+/* эффект для всех ховеров и фокусов */
+/* :hover,
+:focus {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.container.jobs-img {
+  display: none;
+}

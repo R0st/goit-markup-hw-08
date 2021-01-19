@@ -1,0 +1,143 @@
+/* header */
+.header {
+  background-color: #fff;
+}
+
+/* navigation */
+// .main-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .site-nav {
+//   display: flex;
+// }
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: $accent-color;
+
+  transition-duration: 250ms;
+  transition-delay: $timing-function;
+}
+
+.site-nav .link,
+.auth-nav .link {
+  display: block;
+  font-family: $main-font, sans-serif;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-text-color;
+  position: relative;
+}
+// .current {
+//   content: "";
+//   display: block;
+//   width: 100%;
+//   height: 5px;
+//   background-color: $accent-color;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   transform: scaleX(0);
+//   transition: transform 250ms $timing-function;
+//   border-radius: 2px;
+// }
+.site-nav .link.current {
+  position: relative;
+  color: $accent-color;
+}
+.site-nav .current::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+// .link.current::after {
+//   content: "";
+//   display: block;
+//   width: 100%;
+//   height: 5px;
+//   background-color: $accent-color;
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   transform: scaleX(0);
+//   transition: transform 250ms $timing-function;
+//   border-radius: 2px;
+// }
+// .site-nav .link:hover::after {
+//   transform: scaleX(1);
+// }
+
+.item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & .link {
+    display: flex;
+    align-items: center;
+  }
+
+  &.envelope,
+  &.vector {
+    fill: $primary-text-color;
+  }
+}
+
+.envelope-icon {
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.vector-icon {
+  padding: 0;
+  border: none;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  color: $primary-text-color;
+
+  & .link {
+    color: $primary-text-color;
+  }
+
+  & .link,
+  & .envelope-icon,
+  & .vector-icon {
+    transition-duration: 250ms;
+    transition-delay: $timing-function;
+  }
+}
+
+.auth-nav .link:hover .envelope-icon,
+.auth-nav .link:focus .envelope-icon,
+.auth-nav .link:hover .vector-icon,
+.auth-nav .link:focus .vector-icon,
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: $accent-color;
+  fill: $accent-color;
+}

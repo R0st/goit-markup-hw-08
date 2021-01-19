@@ -1,0 +1,66 @@
+/* clients */
+.static-clients {
+}
+.clients-list {
+  display: flex;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: 50%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
+}
+.client {
+  width: 170px;
+  height: 90px;
+
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
+
+  margin-right: 30px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.client-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  fill: $color-socseti;
+  transition: fill 2500ms $timing-function, border 2500ms $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}

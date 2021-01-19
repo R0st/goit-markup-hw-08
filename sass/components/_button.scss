@@ -1,0 +1,101 @@
+/* button */
+// под девайсы 768px и 1200px
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.buttons-list {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
+
+// стандартный набор
+.btn-hero {
+  display: inline-block;
+  color: $white-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    cursor: pointer;
+    /* background-color: var(--accent-color); */
+  }
+}
+
+/* button  кнопки в Portfolio*/
+.btn {
+  display: inline-block;
+  font-family: $main-font, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 73px;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: none;
+
+    transition-duration: 250ms;
+    transition-delay: $timing-function;
+  }
+}
+.buttons-list:not(:last-child) {
+  margin-right: 8px;
+}
+
+//  .btn-footer
+
+.btn-footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $white-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  padding: 10px 28px 10px 29px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-delay: $timing-function;
+  }
+}
