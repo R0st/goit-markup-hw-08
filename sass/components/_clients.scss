@@ -1,44 +1,59 @@
 /* clients */
-.static-clients {
-}
+// .static-clients {
+// }
 .clients-list {
   display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
     flex-wrap: wrap;
     justify-content: center;
-    flex-basis: 50%;
+    // flex-basis: 50%;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
-    flex-basis: 50%;
+    // flex-basis: 50%;
   }
 }
 .client {
-  width: 170px;
+  width: 210px;
   height: 90px;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     margin-bottom: 30px;
 
-    &:not(:last-child) {
+    &:nth-child(n + 5) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n + 1) {
       margin-right: 30px;
     }
   }
 
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-    flex-basis: 50%;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100%-90px) / 3);
+    margin-right: 30px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
   }
 
-  margin-right: 30px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    flex-basis: 33.33333%;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   box-sizing: border-box;
 
-  &:last-child {
-    margin-right: 0;
-  }
   &:hover,
   &:focus {
     border-color: $accent-color;
