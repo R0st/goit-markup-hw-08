@@ -77,9 +77,12 @@
 //  .btn-footer
 
 .btn-footer {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @media screen and (min-width: $mobile) {
+    margin-top: 20px;
+  }
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
   color: $white-color;
   background-color: $accent-color;
   border-radius: 4px;

@@ -3,10 +3,29 @@
   background-color: #fff;
 }
 
-/* navigation */
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+// navigation
 // .main-nav {
 //   display: flex;
-//   align-items: center;
+// justify-content: space-between;
+// align-items: center;
 // }
 
 // .site-nav {
