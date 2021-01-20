@@ -1,8 +1,9 @@
 /* header */
 .header {
   background-color: #fff;
+  position: relative;
 }
-
+// бургер меню на студию портфолио
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -16,17 +17,50 @@
 }
 
 .menu-button.is-open .icon-close {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
   display: none;
 }
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-container {
+  background-color: $white-color;
+  font-size: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    padding: 20px;
+    text-align: center;
+  }
+
+  &.is-open {
+    display: block;
+  }
+
+  // & .site-nav.list {
+  //   display: inline-flex;
+  // }
+
+  &.auth-nav {
+    display: block;
+  }
+}
+
 // navigation
-// .main-nav {
-//   display: flex;
-// justify-content: space-between;
-// align-items: center;
-// }
+.main-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // .site-nav {
 //   display: flex;
@@ -47,11 +81,18 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   color: $title-text-color;
   position: relative;
 }
+
+.site-nav .link:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
 // .current {
 //   content: "";
 //   display: block;
@@ -82,7 +123,6 @@
   background-color: $accent-color;
   border-radius: 2px;
 }
-
 // .link.current::after {
 //   content: "";
 //   display: block;
@@ -135,7 +175,7 @@
 }
 
 .auth-nav {
-  display: flex;
+  // display: flex;
   margin-left: auto;
   color: $primary-text-color;
 

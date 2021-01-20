@@ -547,6 +547,14 @@ a:hover, a:focus {
   padding: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .form {
+    width: calc(100% - 30px);
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
 .form-close {
   width: 16px;
   height: 16px;
@@ -1028,6 +1036,7 @@ a:hover, a:focus {
 /* header */
 .header {
   background-color: #fff;
+  position: relative;
 }
 
 .menu-button {
@@ -1045,11 +1054,51 @@ a:hover, a:focus {
 }
 
 .menu-button.is-open .icon-close {
-  display: block;
+  display: none;
 }
 
 .menu-button.is-open .icon-menu {
-  display: none;
+  display: block;
+}
+
+.menu-container {
+  background-color: #ffffff;
+  font-size: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-container.auth-nav {
+  display: block;
+}
+
+.main-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-nav .link:hover,
@@ -1068,10 +1117,14 @@ a:hover, a:focus {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #212121;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .link:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .site-nav .link.current {
@@ -1129,9 +1182,6 @@ a:hover, a:focus {
 }
 
 .auth-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   color: #757575;
 }
