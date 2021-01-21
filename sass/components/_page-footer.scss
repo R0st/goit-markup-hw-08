@@ -69,9 +69,15 @@
   // flex-direction: column;
   // margin-left: 93px;
 
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-    // display: flex;
+  @media screen and (max-width: $mobile) {
+    // width: $mobile;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet) {
+    // width: $mobile;
+    display: flex;
     flex-wrap: wrap;
   }
 }
