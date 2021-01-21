@@ -1,0 +1,64 @@
+.jobs-img .title,
+.team > h2 {
+  font-family: $main-font, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.jobs-img {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    flex-basis: 50%;
+  }
+
+  & img {
+    margin-right: 30px;
+    display: block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.card {
+  // position: relative;
+
+  &-text {
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+      height: 50px;
+    }
+    // display: flex;
+    // width: 370px;
+    // height: 70px;
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $bcg-jobs-img;
+
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+  }
+}
+.pictures img:last-child {
+  margin-right: 0;
+}

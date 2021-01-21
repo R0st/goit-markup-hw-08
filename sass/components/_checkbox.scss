@@ -1,72 +1,79 @@
 /* checkbox */
 .checkbox {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
-    &-lable {
-      display: flex;
-      align-items: center;
-    }
-
-    &-text {
-      border-bottom: 1px solid $accent-color;
-      color: $accent-color;
-      
-    }
-
-    &-icon {
-      display: inline-block;
-      width: 16px;
-      height: 15px;
-      margin-right: 8px;
-      
-      border: 2px solid $title-text-color;
-      border-radius: 4px;
-    
-    }
-
-    &-lable {
-      padding-bottom: 30px;
-    }
+  &-lable {
+    display: flex;
+    align-items: center;
   }
-  
-    /* на будущее
+
+  &-text {
+    border-bottom: 1px solid $accent-color;
+    color: $accent-color;
+  }
+
+  &-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid $title-text-color;
+    border-radius: 4px;
+  }
+
+  &-lable {
+    padding-bottom: 30px;
+  }
+}
+.check-text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+/* на будущее
     .checkbox {
     -webkit-appearance: none; 
     -moz-appearance: none;
     appearance: none;} */
-    
-  .checkbox:checked + .checkbox-icon {
-    background-color: $accent-color; 
-    background-image: url(../images/decoration/icon-check-on.svg);
-    background-size: contain;
-    background-origin: border-box;
-    border-color: $accent-color;
-  
-    transition-duration: 250ms;
-    transition-delay: $timing-function;
-  
-    transition-duration: 250ms;
-    transition-delay: $timing-function;
-  }
 
-  .checkbox:focus + .checkbox-icon {
-    background-image: url(../images/decoration/check.svg);
-  
-    transition-duration: 250ms;
-    transition-delay: $timing-function;    
-  }
+.checkbox:checked + .checkbox-icon {
+  background-color: $accent-color;
+  background-image: url(../images/decoration/icon-check-on.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $accent-color;
 
-  .checkbox:focus:checked + .checkbox-icon {
-    background-image: url(../images/decoration/icon-check-on.svg);
-    background-color: $accent-color;
-   
-    transition-duration: 250ms;
-    transition-delay: $timing-function;
-  }
+  transition-duration: 250ms;
+  transition-delay: $timing-function;
+
+  transition-duration: 250ms;
+  transition-delay: $timing-function;
+}
+
+.checkbox:focus + .checkbox-icon {
+  background-image: url(../images/decoration/check.svg);
+
+  transition-duration: 250ms;
+  transition-delay: $timing-function;
+}
+
+.checkbox:focus:checked + .checkbox-icon {
+  background-image: url(../images/decoration/icon-check-on.svg);
+  background-color: $accent-color;
+
+  transition-duration: 250ms;
+  transition-delay: $timing-function;
+}
