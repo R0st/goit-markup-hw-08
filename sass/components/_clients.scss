@@ -21,6 +21,7 @@
 .client {
   // width: 210px;
   height: 90px;
+  box-sizing: border-box;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
@@ -56,8 +57,6 @@
       margin-right: 0;
     }
   }
-
-  box-sizing: border-box;
 
   &:hover,
   &:focus {

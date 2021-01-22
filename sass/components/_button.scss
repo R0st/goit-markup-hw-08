@@ -78,8 +78,9 @@
 
 .btn-footer {
   margin-top: 20px;
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   // text-align: center;
   color: $white-color;
   background-color: $accent-color;
@@ -98,5 +99,10 @@
 
     transition-duration: 250ms;
     transition-delay: $timing-function;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }

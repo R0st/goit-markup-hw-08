@@ -67,6 +67,8 @@
 }
 .social-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0 32px 30px;
 
   @media screen and (min-width: $mobile) {
@@ -78,7 +80,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    // width: $tablet;
   }
 }
 .social-icon:not(:last-child) {

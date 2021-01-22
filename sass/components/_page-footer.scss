@@ -47,12 +47,23 @@
 
 .logo-footer {
   text-align: center;
-  .container {
-    width: 768px;
-  }
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  // .container {
+  //   width: 768px;
+  // }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .logo-div {
@@ -66,21 +77,15 @@
 }
 
 /* footer form */
-// .footer-shared {
-//   display: flex;
-//   flex-direction: column;
-//   margin-left: 93px;
+.footer-shared {
+  // display: flex;
 
-//   @media screen and (min-width: $mobile) {
-//     // width: $mobile;
-//     // display: flex;
-//     flex-wrap: wrap;
-//   }
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  text-align: left;
+}
 
-//   @media screen and (min-width: 767px) and (max-width: 1199px) {
-//     flex-wrap: wrap;
-//   }
-// }
 .footer-input {
   background-color: $main-bcg;
   width: 450px;
@@ -91,20 +96,39 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding: 15px 16px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     width: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
   }
 }
 
 .footer-distribution {
   position: relative;
-  display: block;
-  align-items: center;
+  display: inline-block;
+  // align-items: center;
 
-  // @media screen and (min-width: 767px) and (max-width: 1199px) {
-  //   // display: flex;
-  //   // flex-wrap: wrap;
-  // }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   & .footer-svg {
     margin-left: 10px;
@@ -112,17 +136,13 @@
 }
 
 /* footer social */
-.footer-social {
-  margin-bottom: 60px;
-  margin-top: 60px;
-}
 .resourse {
   display: inline-flex;
 }
-// .footer-social .social-list {
-//     padding: 0;
-//     margin: 0;
-//   }
+.footer-social .social-list {
+  padding: 0;
+  margin: 0;
+}
 
 .footer-social .logo-icon {
   fill: $white-color;
@@ -131,4 +151,10 @@
 .footer-social .social-link:hover,
 .footer-social .social-link:focus {
   background-color: $accent-color;
+}
+
+.footer-social {
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
