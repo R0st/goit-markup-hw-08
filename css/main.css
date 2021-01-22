@@ -1726,6 +1726,12 @@ a:hover, a:focus {
   text-align: left;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-shared {
+    text-align: center;
+  }
+}
+
 .footer-input {
   background-color: #2f303a;
   width: 450px;
@@ -1827,6 +1833,13 @@ a:hover, a:focus {
 .footer-social .social-link:hover,
 .footer-social .social-link:focus {
   background-color: #2196f3;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-social {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
