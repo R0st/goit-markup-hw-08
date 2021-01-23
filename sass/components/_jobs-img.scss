@@ -8,6 +8,8 @@
 }
 
 .jobs-img {
+  padding-top: 0;
+
   @media screen and (max-width: 1199px) {
     display: none;
   }
@@ -28,6 +30,9 @@
 
 .card {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
   &-text {
     width: 450px;
@@ -44,7 +49,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white-color;
-    background-color: $bcg-jobs-img;
+    background-color: $bcg-jobs-img2;
 
     position: absolute;
     bottom: 0;
