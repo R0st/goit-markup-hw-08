@@ -78,10 +78,7 @@
 
 .btn-footer {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // text-align: center;
+  display: inline-flex;
   color: $white-color;
   background-color: $accent-color;
   border-radius: 4px;
