@@ -1,17 +1,20 @@
 /* logo */
 .logo {
-    color: $accent-color;
-    font-family: $logo-font, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19; 
-    
-    &-secondary {
-      color: $white-color;
-    }
+  color: $accent-color;
+  font-family: $logo-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &-secondary {
+    color: $white-color;
   }
-  
-  .header-logo {
-    margin-right: 93px;
+}
+
+.header-logo {
+  @media screen and (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
   }
-   
+}

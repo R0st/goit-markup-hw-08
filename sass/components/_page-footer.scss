@@ -53,7 +53,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     padding-left: 76px;
     padding-right: 89px;
@@ -104,6 +103,11 @@
   }
 }
 
+.footer-block {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 .footer-distribution {
   position: relative;
   display: inline-block;
@@ -153,7 +157,7 @@
 }
 
 .footer-social {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
     margin-bottom: 60px;
   }

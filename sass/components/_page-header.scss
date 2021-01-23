@@ -7,6 +7,10 @@
     padding-bottom: 16px;
     padding-top: 16px;
   }
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 // бургер меню на студию портфолио
 .menu-button {
@@ -36,12 +40,12 @@
 .menu-container {
   background-color: $white-color;
   font-size: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   @media screen and (max-width: 767px) {
     display: none;
     border-top: 1px solid #ececec;
+    padding-bottom: 60px;
+    padding-top: 60px;
 
     position: absolute;
     top: 100%;
@@ -51,13 +55,15 @@
     text-align: center;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   display: flex;
+  // }
 
   &.is-open {
     display: block;
@@ -89,18 +95,26 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    font-family: $main-font;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.17;
+
+    letter-spacing: 0.02em;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
+    font-size: 14px;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    align-items: center;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   display: flex;
+  //   align-items: center;
+  //   font-size: 14px;
+  // }
 }
 
 .site-nav .link:hover,
@@ -123,14 +137,12 @@
   color: $title-text-color;
   position: relative;
 }
-.site-nav .link {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+.site-nav .item {
+  @media screen and (min-width: $tablet) {
     margin-right: 50px;
-  }
 
-  @media screen and (min-width: $desktop) {
     &:last-child {
-      margin-right: 50px;
+      margin-right: 0;
     }
   }
 }
@@ -163,13 +175,17 @@
 
   position: absolute;
   left: 0;
-  bottom: -8px;
+  bottom: -12px;
 
   display: block;
   width: 100%;
   height: 4px;
   background-color: $accent-color;
   border-radius: 2px;
+
+  @media screen and (min-width: $tablet) {
+    bottom: -34px;
+  }
 }
 // .link.current::after {
 //   content: "";
@@ -212,6 +228,13 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 16px;
   }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
 }
 .envelope-icon {
   padding: 0;
@@ -236,6 +259,15 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
     align-items: center;
   }
 
