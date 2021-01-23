@@ -51,6 +51,14 @@
     text-align: center;
   }
 
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
   &.is-open {
     display: block;
   }
@@ -82,6 +90,17 @@
     align-items: center;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav .link:hover,
@@ -103,6 +122,17 @@
   // padding-bottom: 32px;
   color: $title-text-color;
   position: relative;
+}
+.site-nav .link {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:last-child {
+      margin-right: 50px;
+    }
+  }
 }
 
 // .site-nav .link:not(:last-child) {

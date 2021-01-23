@@ -1191,6 +1191,22 @@ a:hover, a:focus {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .menu-container.is-open {
   display: block;
 }
@@ -1227,6 +1243,28 @@ a:hover, a:focus {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
@@ -1245,6 +1283,18 @@ a:hover, a:focus {
   letter-spacing: 0.02em;
   color: #212121;
   position: relative;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .site-nav .link {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav .link:last-child {
+    margin-right: 50px;
+  }
 }
 
 .site-nav .link.current {
