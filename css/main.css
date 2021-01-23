@@ -411,7 +411,6 @@ a:hover, a:focus {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -956,6 +955,11 @@ a:hover, a:focus {
   }
 }
 
+.project-thumb img {
+  display: block;
+  width: 100%;
+}
+
 .project-card {
   width: 100%;
   margin-bottom: 10px;
@@ -1270,6 +1274,7 @@ a:hover, a:focus {
 .header {
   background-color: #fff;
   position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
