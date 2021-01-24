@@ -56,6 +56,7 @@
     display: inline-block;
     top: -16px;
     left: 0;
+    color: $primary-text-color;
 
     // font-family: $main-font, sans-serif;
     // font-weight: 400;
@@ -86,6 +87,10 @@
   transition-duration: 250ms;
   transition-delay: $timing-function;
   fill: $accent-color;
+}
+
+.check-text {
+  width: 100%;
 }
 /* .form-input:focus + .form-label,
   .form-input:not(:placeholder-shown) + .form-label {
