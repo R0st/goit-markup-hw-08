@@ -1831,6 +1831,11 @@ a:hover, a:focus {
   width: 100%;
 }
 
+.workers:hover,
+.workers:focus {
+  color: none;
+}
+
 .title.name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
